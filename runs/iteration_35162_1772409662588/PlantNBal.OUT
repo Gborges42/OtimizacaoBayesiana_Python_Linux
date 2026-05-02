@@ -1,0 +1,469 @@
+*PLANT N BALANCE
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:01:02
+
+*RUN   1        : Esplen_EPOCA_1_2015       CRGRO047 EMEP1403    1
+ MODEL          : CRGRO047 - Dry bean
+ EXPERIMENT     : EMEP1403 BN EMGO1401BN CULTIVAR ESPLENDOR
+ DATA PATH      :
+ TREATMENT  1   : Esplen_EPOCA_1_2015       CRGRO047
+
+
+ CROP           : Dry bean         CULTIVAR : RODADA_GA        ECOTYPE :MESIND
+ STARTING DATE  : APR 13 2015
+ PLANTING DATE  : APR 13 2015        PLANTS/m2 : 33.3     ROW SPACING :  45.cm
+ WEATHER        : AFGO   2015
+ SOIL           : GOST000002     TEXTURE : VFSA  - Latossolo V. Distrofico(2
+ SOIL INITIAL C : DEPTH: 90cm EXTR. H2O: 87.7mm  NO3: 90.3kg/ha  NH4:  9.8kg/ha
+ WATER BALANCE  : IRRIGATE ON REPORTED DATE(S)
+ IRRIGATION     :      288 mm IN    18 APPLICATIONS
+ NITROGEN BAL.  : SOIL-N, N-UPTAKE & DYNAMIC N-FIXATION SIMULATION
+ N-FERTILIZER   :      100 kg/ha IN     3 APPLICATIONS
+ RESIDUE/MANURE : INITIAL :     0 kg/ha ;       0 kg/ha IN     0 APPLICATIONS
+ ENVIRONM. OPT. : DAYL=    0.00  SRAD=    0.00  TMAX=    0.00  TMIN=    0.00
+                  RAIN=    0.00  CO2 =    0.00  DEW =    0.00  WIND=    0.00
+ SIMULATION OPT : WATER   :Y  NITROGEN:Y  N-FIX:Y  PHOSPH :N  PESTS  :N
+                  PHOTO   :L  ET      :R  INFIL:S  HYDROL :R  SOM    :G
+                  CO2 400ppm  NSWIT   :1  EVAP :S  SOIL   :3  STEMP  :D
+ MANAGEMENT OPT : PLANTING:R  IRRIG   :R  FERT :R  RESIDUE:R  HARVEST:M
+                  WEATHER :M  TILLAGE :N
+
+*SUMMARY OF SOIL AND GENETIC INPUT PARAMETERS
+
+   SOIL LOWER UPPER   SAT  EXTR  INIT   ROOT   BULK     pH    NO3    NH4    ORG
+  DEPTH LIMIT LIMIT    SW    SW    SW   DIST   DENS                          C
+   cm   cm3/cm3    cm3/cm3    cm3/cm3         g/cm3         ugN/g  ugN/g     %
+-------------------------------------------------------------------------------
+  0- 10 0.283 0.377 0.460 0.094 0.377   1.00   1.76   5.00   5.50   0.60   1.67
+ 10- 20 0.292 0.387 0.440 0.095 0.387   0.80   1.88   5.00   5.50   0.60   1.23
+ 20- 30 0.286 0.380 0.450 0.094 0.380   0.60   1.85   5.00   5.50   0.60   1.06
+ 30- 40 0.299 0.398 0.460 0.099 0.398   0.30   1.82   5.00   5.50   0.60   0.87
+ 40- 50 0.299 0.398 0.460 0.099 0.398   0.10   1.82   5.00   5.50   0.60   0.87
+ 50- 60 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 60- 70 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 70- 80 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 80- 90 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+
+TOT- 90  26.5  35.3  41.1   8.8  35.3  <--cm   -  kg/ha-->   90.3    9.8 167130
+SOIL ALBEDO    : 0.14      EVAPORATION LIMIT : 6.00         MIN. FACTOR  : 1.00
+RUNOFF CURVE # :83.00      DRAINAGE RATE     : 0.30         FERT. FACTOR : 0.90
+
+ Dry bean   CULTIVAR :IB0096-RODADA_GA          ECOTYPE :MESIND
+ CSDVAR :12.17  PPSEN  : 0.00  EMG-FLW:23.20  FLW-FSD: 6.60  FSD-PHM : 16.10
+ WTPSD  :0.204  SDPDVR : 4.64  SDFDUR :20.90  PODDUR : 9.00  XFRUIT  :  1.00
+ THRESH : 78.0  SDPRO  :0.235  SDLIP   : 0.030
+
+
+   PLANT COMPONENT  HARVEST     LOST*   TOTAL  BALANCE
+   ---------------  -------- kg[N]/ha -------  -------
+   Leaf N              0.48    14.29    14.77
+   Stem N              3.24     2.37     5.61
+   Shell N             9.97     2.36    12.33
+   Seed N             53.41     0.00    53.41
+   Root N              1.24     1.95     3.18
+   Nodule N            0.48     0.64     1.12
+   Total N            68.83    21.59    90.42
+   N leakage                             5.27
+   TOTAL N                                       95.69
+
+
+   N INPUTS TO SYSTEM                kg[N]/ha
+   ------------------                --------
+   Seed N At Planting                    1.92
+   N2 Fixed                             10.66
+   N Uptake from Soil                   83.20
+   TOTAL N                                       95.78
+
+   * Lost due to senescence, freeze, pest or disease damage.
+
+*******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:01:02
+
+*RUN   2        : Esplen_EPOCA_2_2015       CRGRO047 EMEP1403    2
+ MODEL          : CRGRO047 - Dry bean
+ EXPERIMENT     : EMEP1403 BN EMGO1401BN CULTIVAR ESPLENDOR
+ DATA PATH      :
+ TREATMENT  2   : Esplen_EPOCA_2_2015       CRGRO047
+
+
+ CROP           : Dry bean         CULTIVAR : RODADA_GA        ECOTYPE :MESIND
+ STARTING DATE  : MAY  6 2015
+ PLANTING DATE  : MAY  6 2015        PLANTS/m2 : 33.3     ROW SPACING :  45.cm
+ WEATHER        : AFGO   2015
+ SOIL           : GOST000002     TEXTURE : VFSA  - Latossolo V. Distrofico(2
+ SOIL INITIAL C : DEPTH: 90cm EXTR. H2O: 87.7mm  NO3: 90.3kg/ha  NH4:  9.8kg/ha
+ WATER BALANCE  : IRRIGATE ON REPORTED DATE(S)
+ IRRIGATION     :      377 mm IN    22 APPLICATIONS
+ NITROGEN BAL.  : SOIL-N, N-UPTAKE & DYNAMIC N-FIXATION SIMULATION
+ N-FERTILIZER   :      100 kg/ha IN     3 APPLICATIONS
+ RESIDUE/MANURE : INITIAL :     0 kg/ha ;       0 kg/ha IN     0 APPLICATIONS
+ ENVIRONM. OPT. : DAYL=    0.00  SRAD=    0.00  TMAX=    0.00  TMIN=    0.00
+                  RAIN=    0.00  CO2 =    0.00  DEW =    0.00  WIND=    0.00
+ SIMULATION OPT : WATER   :Y  NITROGEN:Y  N-FIX:Y  PHOSPH :N  PESTS  :N
+                  PHOTO   :L  ET      :R  INFIL:S  HYDROL :R  SOM    :G
+                  CO2 400ppm  NSWIT   :1  EVAP :S  SOIL   :3  STEMP  :D
+ MANAGEMENT OPT : PLANTING:R  IRRIG   :R  FERT :R  RESIDUE:R  HARVEST:M
+                  WEATHER :M  TILLAGE :N
+
+*SUMMARY OF SOIL AND GENETIC INPUT PARAMETERS
+
+   SOIL LOWER UPPER   SAT  EXTR  INIT   ROOT   BULK     pH    NO3    NH4    ORG
+  DEPTH LIMIT LIMIT    SW    SW    SW   DIST   DENS                          C
+   cm   cm3/cm3    cm3/cm3    cm3/cm3         g/cm3         ugN/g  ugN/g     %
+-------------------------------------------------------------------------------
+  0- 10 0.283 0.377 0.460 0.094 0.377   1.00   1.76   5.00   5.50   0.60   1.67
+ 10- 20 0.292 0.387 0.440 0.095 0.387   0.80   1.88   5.00   5.50   0.60   1.23
+ 20- 30 0.286 0.380 0.450 0.094 0.380   0.60   1.85   5.00   5.50   0.60   1.06
+ 30- 40 0.299 0.398 0.460 0.099 0.398   0.30   1.82   5.00   5.50   0.60   0.87
+ 40- 50 0.299 0.398 0.460 0.099 0.398   0.10   1.82   5.00   5.50   0.60   0.87
+ 50- 60 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 60- 70 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 70- 80 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 80- 90 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+
+TOT- 90  26.5  35.3  41.1   8.8  35.3  <--cm   -  kg/ha-->   90.3    9.8 167130
+SOIL ALBEDO    : 0.14      EVAPORATION LIMIT : 6.00         MIN. FACTOR  : 1.00
+RUNOFF CURVE # :83.00      DRAINAGE RATE     : 0.30         FERT. FACTOR : 0.90
+
+ Dry bean   CULTIVAR :IB0096-RODADA_GA          ECOTYPE :MESIND
+ CSDVAR :12.17  PPSEN  : 0.00  EMG-FLW:23.20  FLW-FSD: 6.60  FSD-PHM : 16.10
+ WTPSD  :0.204  SDPDVR : 4.64  SDFDUR :20.90  PODDUR : 9.00  XFRUIT  :  1.00
+ THRESH : 78.0  SDPRO  :0.235  SDLIP   : 0.030
+
+
+   PLANT COMPONENT  HARVEST     LOST*   TOTAL  BALANCE
+   ---------------  -------- kg[N]/ha -------  -------
+   Leaf N              0.49    12.83    13.33
+   Stem N              2.53     2.04     4.57
+   Shell N             9.19     3.52    12.70
+   Seed N             51.84     0.00    51.84
+   Root N              1.25     1.92     3.17
+   Nodule N            0.63     0.52     1.14
+   Total N            65.92    20.83    86.75
+   N leakage                             6.17
+   TOTAL N                                       92.92
+
+
+   N INPUTS TO SYSTEM                kg[N]/ha
+   ------------------                --------
+   Seed N At Planting                    1.92
+   N2 Fixed                             10.83
+   N Uptake from Soil                   80.21
+   TOTAL N                                       92.96
+
+   * Lost due to senescence, freeze, pest or disease damage.
+
+*******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:01:02
+
+*RUN   3        : Esplen_EPOCA_3_2015       CRGRO047 EMEP1403    3
+ MODEL          : CRGRO047 - Dry bean
+ EXPERIMENT     : EMEP1403 BN EMGO1401BN CULTIVAR ESPLENDOR
+ DATA PATH      :
+ TREATMENT  3   : Esplen_EPOCA_3_2015       CRGRO047
+
+
+ CROP           : Dry bean         CULTIVAR : RODADA_GA        ECOTYPE :MESIND
+ STARTING DATE  : MAY 28 2015
+ PLANTING DATE  : MAY 28 2015        PLANTS/m2 : 33.3     ROW SPACING :  45.cm
+ WEATHER        : AFGO   2015
+ SOIL           : GOST000002     TEXTURE : VFSA  - Latossolo V. Distrofico(2
+ SOIL INITIAL C : DEPTH: 90cm EXTR. H2O: 87.7mm  NO3: 90.3kg/ha  NH4:  9.8kg/ha
+ WATER BALANCE  : IRRIGATE ON REPORTED DATE(S)
+ IRRIGATION     :      418 mm IN    21 APPLICATIONS
+ NITROGEN BAL.  : SOIL-N, N-UPTAKE & DYNAMIC N-FIXATION SIMULATION
+ N-FERTILIZER   :      100 kg/ha IN     3 APPLICATIONS
+ RESIDUE/MANURE : INITIAL :     0 kg/ha ;       0 kg/ha IN     0 APPLICATIONS
+ ENVIRONM. OPT. : DAYL=    0.00  SRAD=    0.00  TMAX=    0.00  TMIN=    0.00
+                  RAIN=    0.00  CO2 =    0.00  DEW =    0.00  WIND=    0.00
+ SIMULATION OPT : WATER   :Y  NITROGEN:Y  N-FIX:Y  PHOSPH :N  PESTS  :N
+                  PHOTO   :L  ET      :R  INFIL:S  HYDROL :R  SOM    :G
+                  CO2 400ppm  NSWIT   :1  EVAP :S  SOIL   :3  STEMP  :D
+ MANAGEMENT OPT : PLANTING:R  IRRIG   :R  FERT :R  RESIDUE:R  HARVEST:M
+                  WEATHER :M  TILLAGE :N
+
+*SUMMARY OF SOIL AND GENETIC INPUT PARAMETERS
+
+   SOIL LOWER UPPER   SAT  EXTR  INIT   ROOT   BULK     pH    NO3    NH4    ORG
+  DEPTH LIMIT LIMIT    SW    SW    SW   DIST   DENS                          C
+   cm   cm3/cm3    cm3/cm3    cm3/cm3         g/cm3         ugN/g  ugN/g     %
+-------------------------------------------------------------------------------
+  0- 10 0.283 0.377 0.460 0.094 0.377   1.00   1.76   5.00   5.50   0.60   1.67
+ 10- 20 0.292 0.387 0.440 0.095 0.387   0.80   1.88   5.00   5.50   0.60   1.23
+ 20- 30 0.286 0.380 0.450 0.094 0.380   0.60   1.85   5.00   5.50   0.60   1.06
+ 30- 40 0.299 0.398 0.460 0.099 0.398   0.30   1.82   5.00   5.50   0.60   0.87
+ 40- 50 0.299 0.398 0.460 0.099 0.398   0.10   1.82   5.00   5.50   0.60   0.87
+ 50- 60 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 60- 70 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 70- 80 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 80- 90 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+
+TOT- 90  26.5  35.3  41.1   8.8  35.3  <--cm   -  kg/ha-->   90.3    9.8 167130
+SOIL ALBEDO    : 0.14      EVAPORATION LIMIT : 6.00         MIN. FACTOR  : 1.00
+RUNOFF CURVE # :83.00      DRAINAGE RATE     : 0.30         FERT. FACTOR : 0.90
+
+ Dry bean   CULTIVAR :IB0096-RODADA_GA          ECOTYPE :MESIND
+ CSDVAR :12.17  PPSEN  : 0.00  EMG-FLW:23.20  FLW-FSD: 6.60  FSD-PHM : 16.10
+ WTPSD  :0.204  SDPDVR : 4.64  SDFDUR :20.90  PODDUR : 9.00  XFRUIT  :  1.00
+ THRESH : 78.0  SDPRO  :0.235  SDLIP   : 0.030
+
+
+   PLANT COMPONENT  HARVEST     LOST*   TOTAL  BALANCE
+   ---------------  -------- kg[N]/ha -------  -------
+   Leaf N              0.43    14.02    14.45
+   Stem N              2.42     2.30     4.73
+   Shell N             9.51     3.13    12.64
+   Seed N             46.71     0.00    46.71
+   Root N              1.15     1.80     2.95
+   Nodule N            0.20     0.47     0.67
+   Total N            60.41    21.72    82.13
+   N leakage                             5.86
+   TOTAL N                                       87.99
+
+
+   N INPUTS TO SYSTEM                kg[N]/ha
+   ------------------                --------
+   Seed N At Planting                    1.92
+   N2 Fixed                              3.16
+   N Uptake from Soil                   82.94
+   TOTAL N                                       88.02
+
+   * Lost due to senescence, freeze, pest or disease damage.
+
+*******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:01:02
+
+*RUN   4        : Esplen_EPOCA_4_2015       CRGRO047 EMEP1403    4
+ MODEL          : CRGRO047 - Dry bean
+ EXPERIMENT     : EMEP1403 BN EMGO1401BN CULTIVAR ESPLENDOR
+ DATA PATH      :
+ TREATMENT  4   : Esplen_EPOCA_4_2015       CRGRO047
+
+
+ CROP           : Dry bean         CULTIVAR : RODADA_GA        ECOTYPE :MESIND
+ STARTING DATE  : JUN 10 2015
+ PLANTING DATE  : JUN 10 2015        PLANTS/m2 : 33.3     ROW SPACING :  45.cm
+ WEATHER        : AFGO   2015
+ SOIL           : GOST000002     TEXTURE : VFSA  - Latossolo V. Distrofico(2
+ SOIL INITIAL C : DEPTH: 90cm EXTR. H2O: 87.7mm  NO3: 90.3kg/ha  NH4:  9.8kg/ha
+ WATER BALANCE  : IRRIGATE ON REPORTED DATE(S)
+ IRRIGATION     :      443 mm IN    26 APPLICATIONS
+ NITROGEN BAL.  : SOIL-N, N-UPTAKE & DYNAMIC N-FIXATION SIMULATION
+ N-FERTILIZER   :      109 kg/ha IN     3 APPLICATIONS
+ RESIDUE/MANURE : INITIAL :     0 kg/ha ;       0 kg/ha IN     0 APPLICATIONS
+ ENVIRONM. OPT. : DAYL=    0.00  SRAD=    0.00  TMAX=    0.00  TMIN=    0.00
+                  RAIN=    0.00  CO2 =    0.00  DEW =    0.00  WIND=    0.00
+ SIMULATION OPT : WATER   :Y  NITROGEN:Y  N-FIX:Y  PHOSPH :N  PESTS  :N
+                  PHOTO   :L  ET      :R  INFIL:S  HYDROL :R  SOM    :G
+                  CO2 400ppm  NSWIT   :1  EVAP :S  SOIL   :3  STEMP  :D
+ MANAGEMENT OPT : PLANTING:R  IRRIG   :R  FERT :R  RESIDUE:R  HARVEST:M
+                  WEATHER :M  TILLAGE :N
+
+*SUMMARY OF SOIL AND GENETIC INPUT PARAMETERS
+
+   SOIL LOWER UPPER   SAT  EXTR  INIT   ROOT   BULK     pH    NO3    NH4    ORG
+  DEPTH LIMIT LIMIT    SW    SW    SW   DIST   DENS                          C
+   cm   cm3/cm3    cm3/cm3    cm3/cm3         g/cm3         ugN/g  ugN/g     %
+-------------------------------------------------------------------------------
+  0- 10 0.283 0.377 0.460 0.094 0.377   1.00   1.76   5.00   5.50   0.60   1.67
+ 10- 20 0.292 0.387 0.440 0.095 0.387   0.80   1.88   5.00   5.50   0.60   1.23
+ 20- 30 0.286 0.380 0.450 0.094 0.380   0.60   1.85   5.00   5.50   0.60   1.06
+ 30- 40 0.299 0.398 0.460 0.099 0.398   0.30   1.82   5.00   5.50   0.60   0.87
+ 40- 50 0.299 0.398 0.460 0.099 0.398   0.10   1.82   5.00   5.50   0.60   0.87
+ 50- 60 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 60- 70 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 70- 80 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+ 80- 90 0.299 0.398 0.460 0.099 0.398   0.00   1.82   5.00   5.50   0.60   0.87
+
+TOT- 90  26.5  35.3  41.1   8.8  35.3  <--cm   -  kg/ha-->   90.3    9.8 167130
+SOIL ALBEDO    : 0.14      EVAPORATION LIMIT : 6.00         MIN. FACTOR  : 1.00
+RUNOFF CURVE # :83.00      DRAINAGE RATE     : 0.30         FERT. FACTOR : 0.90
+
+ Dry bean   CULTIVAR :IB0096-RODADA_GA          ECOTYPE :MESIND
+ CSDVAR :12.17  PPSEN  : 0.00  EMG-FLW:23.20  FLW-FSD: 6.60  FSD-PHM : 16.10
+ WTPSD  :0.204  SDPDVR : 4.64  SDFDUR :20.90  PODDUR : 9.00  XFRUIT  :  1.00
+ THRESH : 78.0  SDPRO  :0.235  SDLIP   : 0.030
+
+
+   PLANT COMPONENT  HARVEST     LOST*   TOTAL  BALANCE
+   ---------------  -------- kg[N]/ha -------  -------
+   Leaf N              0.50    13.93    14.42
+   Stem N              3.09     2.20     5.29
+   Shell N            10.22     3.30    13.52
+   Seed N             56.47     0.00    56.47
+   Root N              1.43     2.16     3.59
+   Nodule N            0.29     0.47     0.76
+   Total N            72.00    22.05    94.05
+   N leakage                             6.83
+   TOTAL N                                      100.87
+
+
+   N INPUTS TO SYSTEM                kg[N]/ha
+   ------------------                --------
+   Seed N At Planting                    1.92
+   N2 Fixed                              5.66
+   N Uptake from Soil                   93.34
+   TOTAL N                                      100.91
+
+   * Lost due to senescence, freeze, pest or disease damage.
+
+*******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:01:02
+
+*RUN   5        : Esplen_EPOCA_1_2016       CRGRO047 EMEP1403    5
+ MODEL          : CRGRO047 - Dry bean
+ EXPERIMENT     : EMEP1403 BN EMGO1401BN CULTIVAR ESPLENDOR
+ DATA PATH      :
+ TREATMENT  5   : Esplen_EPOCA_1_2016       CRGRO047
+
+
+ CROP           : Dry bean         CULTIVAR : RODADA_GA        ECOTYPE :MESIND
+ STARTING DATE  : MAY 11 2016
+ PLANTING DATE  : MAY 11 2016        PLANTS/m2 : 33.3     ROW SPACING :  45.cm
+ WEATHER        : AFGO   2016
+ SOIL           : GOST000003     TEXTURE : VFSA  - Latossolo V. Distrofico(2
+ SOIL INITIAL C : DEPTH: 90cm EXTR. H2O:105.6mm  NO3: 89.9kg/ha  NH4:  9.5kg/ha
+ WATER BALANCE  : IRRIGATE ON REPORTED DATE(S)
+ IRRIGATION     :      511 mm IN    32 APPLICATIONS
+ NITROGEN BAL.  : SOIL-N, N-UPTAKE & DYNAMIC N-FIXATION SIMULATION
+ N-FERTILIZER   :      120 kg/ha IN     3 APPLICATIONS
+ RESIDUE/MANURE : INITIAL :     0 kg/ha ;       0 kg/ha IN     0 APPLICATIONS
+ ENVIRONM. OPT. : DAYL=    0.00  SRAD=    0.00  TMAX=    0.00  TMIN=    0.00
+                  RAIN=    0.00  CO2 =    0.00  DEW =    0.00  WIND=    0.00
+ SIMULATION OPT : WATER   :Y  NITROGEN:Y  N-FIX:Y  PHOSPH :N  PESTS  :N
+                  PHOTO   :L  ET      :R  INFIL:S  HYDROL :R  SOM    :G
+                  CO2 404ppm  NSWIT   :1  EVAP :S  SOIL   :3  STEMP  :D
+ MANAGEMENT OPT : PLANTING:R  IRRIG   :R  FERT :R  RESIDUE:R  HARVEST:M
+                  WEATHER :M  TILLAGE :N
+
+*SUMMARY OF SOIL AND GENETIC INPUT PARAMETERS
+
+   SOIL LOWER UPPER   SAT  EXTR  INIT   ROOT   BULK     pH    NO3    NH4    ORG
+  DEPTH LIMIT LIMIT    SW    SW    SW   DIST   DENS                          C
+   cm   cm3/cm3    cm3/cm3    cm3/cm3         g/cm3         ugN/g  ugN/g     %
+-------------------------------------------------------------------------------
+  0- 10 0.274 0.391 0.502 0.117 0.391   1.00   1.29   5.00   7.60   0.80   1.88
+ 10- 20 0.262 0.375 0.458 0.113 0.375   0.80   1.36   5.00   7.60   0.80   1.88
+ 20- 30 0.244 0.356 0.462 0.112 0.356   0.60   1.32   5.00   7.60   0.80   1.88
+ 30- 40 0.243 0.362 0.453 0.119 0.362   0.30   1.31   5.00   7.60   0.80   1.88
+ 40- 50 0.243 0.362 0.453 0.119 0.362   0.10   1.31   5.00   7.60   0.80   1.88
+ 50- 60 0.243 0.362 0.453 0.119 0.362   0.00   1.31   5.00   7.60   0.80   1.88
+ 60- 70 0.243 0.362 0.453 0.119 0.362   0.00   1.31   5.00   7.60   0.80   1.88
+ 70- 80 0.243 0.362 0.453 0.119 0.362   0.00   1.31   5.00   7.60   0.80   1.88
+ 80- 90 0.243 0.362 0.453 0.119 0.362   0.00   1.31   5.00   7.60   0.80   1.88
+
+TOT- 90  22.4  32.9  41.4  10.6  32.9  <--cm   -  kg/ha-->   89.9    9.5 222404
+SOIL ALBEDO    : 0.14      EVAPORATION LIMIT : 6.00         MIN. FACTOR  : 1.00
+RUNOFF CURVE # :83.00      DRAINAGE RATE     : 0.30         FERT. FACTOR : 0.90
+
+ Dry bean   CULTIVAR :IB0096-RODADA_GA          ECOTYPE :MESIND
+ CSDVAR :12.17  PPSEN  : 0.00  EMG-FLW:23.20  FLW-FSD: 6.60  FSD-PHM : 16.10
+ WTPSD  :0.204  SDPDVR : 4.64  SDFDUR :20.90  PODDUR : 9.00  XFRUIT  :  1.00
+ THRESH : 78.0  SDPRO  :0.235  SDLIP   : 0.030
+
+
+   PLANT COMPONENT  HARVEST     LOST*   TOTAL  BALANCE
+   ---------------  -------- kg[N]/ha -------  -------
+   Leaf N              0.57    14.46    15.03
+   Stem N              4.14     2.28     6.42
+   Shell N            11.27     2.95    14.22
+   Seed N             61.54     0.00    61.54
+   Root N              0.98     1.55     2.54
+   Nodule N            0.61     0.52     1.13
+   Total N            79.13    21.76   100.89
+   N leakage                             4.76
+   TOTAL N                                      105.64
+
+
+   N INPUTS TO SYSTEM                kg[N]/ha
+   ------------------                --------
+   Seed N At Planting                    1.92
+   N2 Fixed                             11.61
+   N Uptake from Soil                   92.17
+   TOTAL N                                      105.69
+
+   * Lost due to senescence, freeze, pest or disease damage.
+
+*******************************************************************************
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:01:02
+
+*RUN   6        : Esplen_EPOCA_2_2016       CRGRO047 EMEP1403    6
+ MODEL          : CRGRO047 - Dry bean
+ EXPERIMENT     : EMEP1403 BN EMGO1401BN CULTIVAR ESPLENDOR
+ DATA PATH      :
+ TREATMENT  6   : Esplen_EPOCA_2_2016       CRGRO047
+
+
+ CROP           : Dry bean         CULTIVAR : RODADA_GA        ECOTYPE :MESIND
+ STARTING DATE  : JUN  2 2016
+ PLANTING DATE  : JUN  2 2016        PLANTS/m2 : 33.3     ROW SPACING :  45.cm
+ WEATHER        : AFGO   2016
+ SOIL           : GOST000003     TEXTURE : VFSA  - Latossolo V. Distrofico(2
+ SOIL INITIAL C : DEPTH: 90cm EXTR. H2O:105.6mm  NO3: 89.9kg/ha  NH4:  9.5kg/ha
+ WATER BALANCE  : IRRIGATE ON REPORTED DATE(S)
+ IRRIGATION     :      421 mm IN    26 APPLICATIONS
+ NITROGEN BAL.  : SOIL-N, N-UPTAKE & DYNAMIC N-FIXATION SIMULATION
+ N-FERTILIZER   :      120 kg/ha IN     3 APPLICATIONS
+ RESIDUE/MANURE : INITIAL :     0 kg/ha ;       0 kg/ha IN     0 APPLICATIONS
+ ENVIRONM. OPT. : DAYL=    0.00  SRAD=    0.00  TMAX=    0.00  TMIN=    0.00
+                  RAIN=    0.00  CO2 =    0.00  DEW =    0.00  WIND=    0.00
+ SIMULATION OPT : WATER   :Y  NITROGEN:Y  N-FIX:Y  PHOSPH :N  PESTS  :N
+                  PHOTO   :L  ET      :R  INFIL:S  HYDROL :R  SOM    :G
+                  CO2 404ppm  NSWIT   :1  EVAP :S  SOIL   :3  STEMP  :D
+ MANAGEMENT OPT : PLANTING:R  IRRIG   :R  FERT :R  RESIDUE:R  HARVEST:M
+                  WEATHER :M  TILLAGE :N
+
+*SUMMARY OF SOIL AND GENETIC INPUT PARAMETERS
+
+   SOIL LOWER UPPER   SAT  EXTR  INIT   ROOT   BULK     pH    NO3    NH4    ORG
+  DEPTH LIMIT LIMIT    SW    SW    SW   DIST   DENS                          C
+   cm   cm3/cm3    cm3/cm3    cm3/cm3         g/cm3         ugN/g  ugN/g     %
+-------------------------------------------------------------------------------
+  0- 10 0.274 0.391 0.502 0.117 0.391   1.00   1.29   5.00   7.60   0.80   1.88
+ 10- 20 0.262 0.375 0.458 0.113 0.375   0.80   1.36   5.00   7.60   0.80   1.88
+ 20- 30 0.244 0.356 0.462 0.112 0.356   0.60   1.32   5.00   7.60   0.80   1.88
+ 30- 40 0.243 0.362 0.453 0.119 0.362   0.30   1.31   5.00   7.60   0.80   1.88
+ 40- 50 0.243 0.362 0.453 0.119 0.362   0.10   1.31   5.00   7.60   0.80   1.88
+ 50- 60 0.243 0.362 0.453 0.119 0.362   0.00   1.31   5.00   7.60   0.80   1.88
+ 60- 70 0.243 0.362 0.453 0.119 0.362   0.00   1.31   5.00   7.60   0.80   1.88
+ 70- 80 0.243 0.362 0.453 0.119 0.362   0.00   1.31   5.00   7.60   0.80   1.88
+ 80- 90 0.243 0.362 0.453 0.119 0.362   0.00   1.31   5.00   7.60   0.80   1.88
+
+TOT- 90  22.4  32.9  41.4  10.6  32.9  <--cm   -  kg/ha-->   89.9    9.5 222404
+SOIL ALBEDO    : 0.14      EVAPORATION LIMIT : 6.00         MIN. FACTOR  : 1.00
+RUNOFF CURVE # :83.00      DRAINAGE RATE     : 0.30         FERT. FACTOR : 0.90
+
+ Dry bean   CULTIVAR :IB0096-RODADA_GA          ECOTYPE :MESIND
+ CSDVAR :12.17  PPSEN  : 0.00  EMG-FLW:23.20  FLW-FSD: 6.60  FSD-PHM : 16.10
+ WTPSD  :0.204  SDPDVR : 4.64  SDFDUR :20.90  PODDUR : 9.00  XFRUIT  :  1.00
+ THRESH : 78.0  SDPRO  :0.235  SDLIP   : 0.030
+
+
+   PLANT COMPONENT  HARVEST     LOST*   TOTAL  BALANCE
+   ---------------  -------- kg[N]/ha -------  -------
+   Leaf N              0.59    14.81    15.40
+   Stem N              4.22     2.43     6.65
+   Shell N            11.79     3.82    15.60
+   Seed N             66.37     0.00    66.37
+   Root N              1.01     1.60     2.61
+   Nodule N            0.89     0.73     1.62
+   Total N            84.87    23.38   108.25
+   N leakage                             4.51
+   TOTAL N                                      112.76
+
+
+   N INPUTS TO SYSTEM                kg[N]/ha
+   ------------------                --------
+   Seed N At Planting                    1.92
+   N2 Fixed                             16.75
+   N Uptake from Soil                   94.20
+   TOTAL N                                      112.87
+
+   * Lost due to senescence, freeze, pest or disease damage.
+
+*******************************************************************************

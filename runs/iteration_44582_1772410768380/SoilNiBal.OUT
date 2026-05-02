@@ -1,0 +1,223 @@
+*SOIL INORGANIC N BALANCE
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:19:28
+
+
+!SOIL INORGANIC N BALANCE                         Initial               Final
+!                                                Year/Doy            Year/Doy
+!                                                2015/103            2015/193
+!                                               (kg[N]/ha)          (kg[N]/ha)
+! Soil N state variables:
+!   Soil NO3                                        90.26               60.69
+!   Soil NH4                                         9.85                3.31
+!   Soil Urea                                        0.00                0.00
+!   Soil N gases                                     0.00                7.49
+
+! N additions:
+!   Fertilizer N                                   100.00
+!   Mineralized N                                   44.18
+
+! N subtractions:
+!   N immobilized                                                        0.00
+!   N leached                                                           43.29
+!   N loss to tile drainage                                              0.00
+!   N Uptake From Soil                                                 112.00
+!   NH3 loss                                                            14.50
+!   N2O loss                                                             0.09
+!   N2 loss                                                              2.89
+!   NO loss                                                              0.02
+
+!   Total N balance                                244.28              244.28
+!   Balance                                                            -0.000
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:19:28
+
+
+!SOIL INORGANIC N BALANCE                         Initial               Final
+!                                                Year/Doy            Year/Doy
+!                                                2015/126            2015/220
+!                                               (kg[N]/ha)          (kg[N]/ha)
+! Soil N state variables:
+!   Soil NO3                                        90.26               66.86
+!   Soil NH4                                         9.85                3.33
+!   Soil Urea                                        0.00                0.00
+!   Soil N gases                                     0.00                4.31
+
+! N additions:
+!   Fertilizer N                                   100.00
+!   Mineralized N                                   46.40
+
+! N subtractions:
+!   N immobilized                                                        0.00
+!   N leached                                                           44.17
+!   N loss to tile drainage                                              0.00
+!   N Uptake From Soil                                                 102.79
+!   NH3 loss                                                            22.68
+!   N2O loss                                                             0.08
+!   N2 loss                                                              2.25
+!   NO loss                                                              0.02
+
+!   Total N balance                                246.50              246.50
+!   Balance                                                             0.000
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:19:28
+
+
+!SOIL INORGANIC N BALANCE                         Initial               Final
+!                                                Year/Doy            Year/Doy
+!                                                2015/148            2015/241
+!                                               (kg[N]/ha)          (kg[N]/ha)
+! Soil N state variables:
+!   Soil NO3                                        90.26               70.53
+!   Soil NH4                                         9.85                4.60
+!   Soil Urea                                        0.00                0.00
+!   Soil N gases                                     0.00                2.02
+
+! N additions:
+!   Fertilizer N                                   100.00
+!   Mineralized N                                   47.71
+
+! N subtractions:
+!   N immobilized                                                        0.00
+!   N leached                                                           31.54
+!   N loss to tile drainage                                              0.00
+!   N Uptake From Soil                                                 120.13
+!   NH3 loss                                                            17.02
+!   N2O loss                                                             0.08
+!   N2 loss                                                              1.88
+!   NO loss                                                              0.03
+
+!   Total N balance                                247.81              247.81
+!   Balance                                                             0.000
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:19:28
+
+
+!SOIL INORGANIC N BALANCE                         Initial               Final
+!                                                Year/Doy            Year/Doy
+!                                                2015/161            2015/253
+!                                               (kg[N]/ha)          (kg[N]/ha)
+! Soil N state variables:
+!   Soil NO3                                        90.26               54.98
+!   Soil NH4                                         9.85                5.45
+!   Soil Urea                                        0.00                0.00
+!   Soil N gases                                     0.00                3.28
+
+! N additions:
+!   Fertilizer N                                   109.00
+!   Mineralized N                                   48.63
+
+! N subtractions:
+!   N immobilized                                                        0.00
+!   N leached                                                           36.48
+!   N loss to tile drainage                                              0.00
+!   N Uptake From Soil                                                 116.33
+!   NH3 loss                                                            38.12
+!   N2O loss                                                             0.08
+!   N2 loss                                                              3.00
+!   NO loss                                                              0.02
+
+!   Total N balance                                257.73              257.73
+!   Balance                                                            -0.000
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:19:28
+
+
+!SOIL INORGANIC N BALANCE                         Initial               Final
+!                                                Year/Doy            Year/Doy
+!                                                2016/132            2016/220
+!                                               (kg[N]/ha)          (kg[N]/ha)
+! Soil N state variables:
+!   Soil NO3                                        89.91               37.03
+!   Soil NH4                                         9.46                3.95
+!   Soil Urea                                        0.00                0.00
+!   Soil N gases                                     0.00                2.60
+
+! N additions:
+!   Fertilizer N                                   120.00
+!   Mineralized N                                   36.33
+
+! N subtractions:
+!   N immobilized                                                        0.00
+!   N leached                                                           51.29
+!   N loss to tile drainage                                              0.00
+!   N Uptake From Soil                                                 112.44
+!   NH3 loss                                                            41.88
+!   N2O loss                                                             0.92
+!   N2 loss                                                              5.36
+!   NO loss                                                              0.23
+
+!   Total N balance                                255.70              255.70
+!   Balance                                                             0.000
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:19:28
+
+
+!SOIL INORGANIC N BALANCE                         Initial               Final
+!                                                Year/Doy            Year/Doy
+!                                                2016/154            2016/242
+!                                               (kg[N]/ha)          (kg[N]/ha)
+! Soil N state variables:
+!   Soil NO3                                        89.91               43.29
+!   Soil NH4                                         9.46                3.25
+!   Soil Urea                                        0.00                0.00
+!   Soil N gases                                     0.00                4.31
+
+! N additions:
+!   Fertilizer N                                   120.00
+!   Mineralized N                                   36.98
+
+! N subtractions:
+!   N immobilized                                                        0.00
+!   N leached                                                           55.99
+!   N loss to tile drainage                                              0.00
+!   N Uptake From Soil                                                 124.22
+!   NH3 loss                                                            19.38
+!   N2O loss                                                             0.96
+!   N2 loss                                                              4.74
+!   NO loss                                                              0.23
+
+!   Total N balance                                256.36              256.36
+!   Balance                                                            -0.000
+
+!===============================================================================
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  MAR 01, 2026 21:19:28
+
+
+!SOIL INORGANIC N BALANCE                         Initial               Final
+!                                                Year/Doy            Year/Doy
+!                                                2017/108            2017/198
+!                                               (kg[N]/ha)          (kg[N]/ha)
+! Soil N state variables:
+!   Soil NO3                                        89.71               61.54
+!   Soil NH4                                         9.61                2.20
+!   Soil Urea                                        0.00                0.00
+!   Soil N gases                                     0.00                0.49
+
+! N additions:
+!   Fertilizer N                                   120.00
+!   Mineralized N                                   29.66
+
+! N subtractions:
+!   N immobilized                                                        0.00
+!   N leached                                                           26.06
+!   N loss to tile drainage                                              0.00
+!   N Uptake From Soil                                                  94.64
+!   NH3 loss                                                            56.43
+!   N2O loss                                                             1.86
+!   N2 loss                                                              5.02
+!   NO loss                                                              0.74
+
+!   Total N balance                                248.98              248.98
+!   Balance                                                            -0.000

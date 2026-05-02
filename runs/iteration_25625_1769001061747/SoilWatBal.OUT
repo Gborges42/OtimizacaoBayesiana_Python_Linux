@@ -1,0 +1,73 @@
+*WATER BALANCE OUTPUT FILE
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  JAN 21, 2026 10:11:01
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 2015/103    353.20
+!     Soil H20 (final) on Year/day 2015/175    346.84
+!     Effective Irrigation                     278.00
+!     Precipitation                            134.40
+!     Water added with new mulch                 0.18
+!     Drainage                                 147.45
+!     Tiledrain flow                             0.00
+!     Runoff                                    27.00
+!     Mulch evaporation                          0.17
+!     Soil Evaporation                         166.59
+!     Transpiration                             77.70
+!     Potential ET                             254.61
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.04
+
+!     Final Balance                            -0.000
+
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  JAN 21, 2026 10:11:01
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 2015/126    353.20
+!     Soil H20 (final) on Year/day 2015/202    350.88
+!     Effective Irrigation                     341.00
+!     Precipitation                             61.40
+!     Water added with new mulch                 0.15
+!     Drainage                                 133.60
+!     Tiledrain flow                             0.00
+!     Runoff                                    23.61
+!     Mulch evaporation                          0.21
+!     Soil Evaporation                         180.33
+!     Transpiration                             67.06
+!     Potential ET                             255.10
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.06
+
+!     Final Balance                            -0.001
+
+
+*DSSAT Cropping System Model Ver. 4.7.5.007 -  JAN 21, 2026 10:11:01
+
+!     WATER BALANCE PARAMETERS
+!     ========================                 --mm--
+
+!     Soil H20 (start) on Year/day 2015/148    353.20
+!     Soil H20 (final) on Year/day 2015/224    365.34
+!     Effective Irrigation                     338.00
+!     Precipitation                              1.80
+!     Water added with new mulch                 0.15
+!     Drainage                                  74.24
+!     Tiledrain flow                             0.00
+!     Runoff                                     0.00
+!     Mulch evaporation                          0.14
+!     Soil Evaporation                         184.39
+!     Transpiration                             69.00
+!     Potential ET                             281.19
+
+!     Initial mulch water content                0.00
+!     Final mulch water content                  0.04
+
+!     Final Balance                            -0.000
+

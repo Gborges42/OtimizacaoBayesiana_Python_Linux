@@ -1,0 +1,16 @@
+sudo apt update
+sudo apt install -y python3 python3-venv python3-pip python3-dev build-essential
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install --upgrade pip setuptools wheel
+pip install numpy pandas joblib bayesian-optimization scikit-optimize scikit-learn matplotlib seaborn
+
+
+chmod +x bin/dscsm047
+
+python -m scripts.run_calibration
+python -m scripts.run_post_training
+python comparar_simulacoes.py
+python violino_grafico.py

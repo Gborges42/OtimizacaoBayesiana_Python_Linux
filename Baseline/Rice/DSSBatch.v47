@@ -1,0 +1,16 @@
+$BATCH(DRY BEAN)
+!
+! Directory    : C:\DSSAT47\DRYBEAN
+! Command Line : C:\DSSAT47\DSCSM047.EXE CRGRO047 B DSSBatch.v47
+! Crop         : Dry bean        
+! Experiment   : EMSA2301.RIX
+! ExpNo        : 1
+! Debug        : C:\DSSAT47\DSCSM047.EXE CRGRO047 " B DSSBatch.v47"
+!
+@FILEX                                                                                        TRTNO     RP     SQ     OP     CO
+./EMSA2301.RIX                                                                                    5      1      0      0      0
+./EMSA2301.RIX                                                                                    6      1      0      0      0
+./EMSA2301.RIX                                                                                    7      1      0      0      0
+./EMSA2301.RIX                                                                                    8      1      0      0      0
+./EMSA2301.RIX                                                                                   10      1      0      0      0
+./EMSA2301.RIX                                                                                   11      1      0      0      0

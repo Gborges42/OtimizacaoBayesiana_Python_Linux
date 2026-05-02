@@ -1,0 +1,34 @@
+*DSSAT Cropping System Model Ver. 4.7.5.007          -    MAY 03, 2019; 12:28:25
+
+ Unit  Filename
+   21  FILEIO
+   14  BATCH 
+  501  SIMCDE
+   25  DSPRO
+   22  DTACDE
+  502  WARNING.OUT
+  503  OUTWARN
+  504  RUNLST
+  505  OUTINFO
+   11  FILEW
+  506  OUTO
+   10  FILEC
+  507  OUTG
+  508  OUTPN
+  509  OUTPC
+  510  OUTS
+  511  SEVAL
+  512  FILECO2
+  513  OUTWTH
+  514  OUTT
+  515  OUTET
+  516  SoilNoBal.OUT
+  517  SolNBalSum.OUT
+  518  N2O.OUT   
+  519  SoilNiBal.OUT
+  520  SoilNi.OUT
+  521  Mulch.OUT
+  522  SWBAL
+  523  OUTWAT
+    8  FILEA
+  524  PNBAL

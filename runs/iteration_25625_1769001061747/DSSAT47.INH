@@ -1,0 +1,123 @@
+*EXP.DETAILS: EMEP1403BN EMGO1401BN CULTIVAR ESPLENDOR                               
+
+*FILES
+@N  EXP.DATA    AFILE        ADIR
+  4 EXP         EMEP1403.BNA                                                                                 
+@N  SPECIES     SPFILE       SPDIR
+  4 SPE         BNGRO047.SPE                                                                                 
+@N  ECOTYPE     EFILE        EDIR
+  4 ECO         BNGRO047.ECO                                                                                 
+@N  CULTIVAR    CFILE        CDIR
+  4 CUL         BNGRO047.CUL                                                                                 
+@N  SOIL        SFILE        SDIR
+  4 SOIL        GO.SOL                                                                                       
+@N  WEATHER     WFILE        WDIR
+  4 WEATH       AFGO1401.WTH                                                                                 
+
+*SIMULATION CONTROL
+@N  GENERAL     NYERS NREPS START   SDATE RSEED SNAME.................... MODEL...
+  4 GE              1     1     S 2015161  2150 Epoca 4 2015              CRGRO047
+@N  OPTIONS     WATER NITRO SYMBI PHOSP POTAS DISES  CHEM  TILL   CO2
+  4 OP              Y     Y     Y     N     N     N     N     N     M
+@N  METHODS     WTHER INCON LIGHT EVAPO INFIL PHOTO HYDRO NSWIT SOMDY MESEV MESOL METMP MEGHG
+  4 ME              M     M     E     R     S     L     R     1     G     S     3     D     0
+@N  MANAGEMENT  PLANT IRRIG FERTI RESID HARVS
+  4 MA              R     R     R     R     M
+@N  OUTPUTS     FNAME OVVEW SUMRY FROPT GROUT CAOUT WAOUT NIOUT MIOUT DIOUT  LONG CHOUT OPOUT
+  4 OU              N     Y     Y     1     Y     N     Y     Y     N     N     Y     N     N
+
+!AUTOMATIC MANAGEM
+@N  PLANTING      PFRST   PLAST PH2OL PH2OU PH2OD PSTMX PSTMN
+  4 PL          2015128 2015129   40.  100.   30.   40.   10.
+@N  IRRIGATION  IMDEP ITHRL ITHRU IROFF IMETH IRAMT IREFF
+  4 IR            30.   50.  100. GS000 IR001  10.0 1.000
+@N  NITROGEN    NMDEP NMTHR NAMNT NCODE NAOFF
+  4 NI            30.   50.   25. FE001 GS000
+@N  RESIDUES    RIPCN RTIME RIDEP
+  4 RE           100.     1   20.
+@N  HARVEST     HFRST   HLAST HPCNP HRCNR
+  4 HA              0 2016182  100.    0.
+
+*TREATMENTS
+@N   R O C TNAME....................  CU  FL  SA  IC  MP  MI  MF  MR  MC  MT  ME  MH  SM
+  4  1 0 0 Esplen_EPOCA_4_2015         1   1   0   4   4   4   4   0   0   0   0   0   4
+
+*CULTIVARS
+@C  CR INGENO CNAME
+  1 BN IB0096 RODADA_GA       
+
+*FIELDS
+@L  ID_FIELD WSTA....  FLSA  FLOB  FLDT  FLDD  FLDS  FLST SLTX   SLDP ID_SOIL
+  1 AFGO0002 AFGO1401   0.0    0. DR000    0.  100. 00000 VFSA   180. GOST000002
+@L             XCRD            YCRD      ELEV              AREA  SLEN  FLWR  SLAS PRMGT
+  1         0.00000         0.00000      0.00               1.0  100.   1.0   0.0   -99   -99
+
+*INITIAL CONDITIONS
+@C  PCR     ICDAT  ICRT  ICND  ICRN  ICRE  ICWD ICRES ICREN ICREP ICRIP ICRID
+  4 BN    2015161     1     0  1.00  1.00   0.0     0  0.00  0.00  100.   15.
+@C   ICBL  SH2O  SNH4  SNO3
+  4   10. 0.377   0.6   5.5
+  4   20. 0.387   0.6   5.5
+  4   30. 0.380   0.6   5.5
+  4   40. 0.398   0.6   5.5
+  4   50. 0.398   0.6   5.5
+  4   60. 0.398   0.6   5.5
+  4   70. 0.398   0.6   5.5
+  4   80. 0.398   0.6   5.5
+  4   90. 0.398   0.6   5.5
+
+*PLANTING DETAILS
+@P    PDATE   EDATE  PPOP  PPOE  PLME  PLDS  PLRS  PLRD  PLDP  PLWT  PAGE  PENV  PLPH  SPRL
+  4 2015161     -99  33.3  33.3     S     R   45.    0.   2.0  -99.  -99. -99.0 -99.0   0.0
+
+*IRRIGATION
+@I   IEFF  IDEP  ITHR  IEPT  IOFF  IAME  IAMT
+  4 1.000   30.   75.  -99. GS000 IR001   0.0
+@I    IDATE  IROP IRVAL
+  4 2015161 IR004  20.0
+  4 2015165 IR004  20.0
+  4 2015170 IR004  20.0
+  4 2015175 IR004  20.0
+  4 2015177 IR004   8.0
+  4 2015181 IR004  12.0
+  4 2015183 IR004  15.0
+  4 2015187 IR004  15.0
+  4 2015191 IR004  20.0
+  4 2015194 IR004   8.0
+  4 2015197 IR004   8.0
+  4 2015201 IR004   8.0
+  4 2015204 IR004  17.0
+  4 2015208 IR004  12.0
+  4 2015212 IR004  20.0
+  4 2015216 IR004  20.0
+  4 2015220 IR004  20.0
+  4 2015223 IR004  20.0
+  4 2015227 IR004  20.0
+  4 2015230 IR004  20.0
+  4 2015234 IR004  20.0
+  4 2015237 IR004  20.0
+  4 2015240 IR004  20.0
+  4 2015243 IR004  20.0
+  4 2015247 IR004  20.0
+  4 2015250 IR004  20.0
+
+*FERTILIZERS
+@F    FDATE  FMCD  FACD  FDEP  FAMN  FAMP  FAMK  FAMC  FAMO  FOCD
+  4 2015161 FE005 AP004    3.   23.  -99.  -99.  -99.  -99.   -99
+  4 2015183 FE005 AP003    0.   43.  -99.  -99.  -99.  -99.   -99
+  4 2015190 FE005 AP003    0.   43.  -99.  -99.  -99.  -99.   -99
+
+*RESIDUES
+@R    RDATE  RCOD  RAMT  RESN  RESP  RESK  RINP  RDEP  RMET
+
+*CHEMICALS
+@C    CDATE CHCOD CHAMT  CHME CHDEP   CHT
+
+*TILLAGE
+@T    TDATE TIMPL  TDEP
+
+*ENVIRONMENT
+@E    ODATE  EDAY  ERAD  EMAX  EMIN ERAIN  ECO2  EDEW EWIND
+
+*HARVEST
+@H    HDATE  HSTG  HCOM HSIZE   HPC  HBPC

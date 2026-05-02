@@ -1,0 +1,115 @@
+*EXP.DETAILS: EMEP1403BN EMGO1401BN CULTIVAR ESPLENDOR                               
+
+*FILES
+@N  EXP.DATA    AFILE        ADIR
+  8 EXP         EMEP1403.BNA                                                                                 
+@N  SPECIES     SPFILE       SPDIR
+  8 SPE         BNGRO047.SPE                                                                                 
+@N  ECOTYPE     EFILE        EDIR
+  8 ECO         BNGRO047.ECO                                                                                 
+@N  CULTIVAR    CFILE        CDIR
+  8 CUL         BNGRO047.CUL                                                                                 
+@N  SOIL        SFILE        SDIR
+  8 SOIL        GO.SOL                                                                                       
+@N  WEATHER     WFILE        WDIR
+  8 WEATH       MOGO1701.WTH                                                                                 
+
+*SIMULATION CONTROL
+@N  GENERAL     NYERS NREPS START   SDATE RSEED SNAME.................... MODEL...
+  8 GE              1     1     S 2017108  2150 Epoca 1 Morrinhos         CRGRO047
+@N  OPTIONS     WATER NITRO SYMBI PHOSP POTAS DISES  CHEM  TILL   CO2
+  8 OP              Y     Y     Y     N     N     N     N     N     M
+@N  METHODS     WTHER INCON LIGHT EVAPO INFIL PHOTO HYDRO NSWIT SOMDY MESEV MESOL METMP MEGHG
+  8 ME              M     M     E     R     S     L     R     1     G     S     3     D     0
+@N  MANAGEMENT  PLANT IRRIG FERTI RESID HARVS
+  8 MA              R     R     R     R     M
+@N  OUTPUTS     FNAME OVVEW SUMRY FROPT GROUT CAOUT WAOUT NIOUT MIOUT DIOUT  LONG CHOUT OPOUT
+  8 OU              N     Y     Y     1     Y     N     Y     Y     N     N     Y     N     N
+
+!AUTOMATIC MANAGEM
+@N  PLANTING      PFRST   PLAST PH2OL PH2OU PH2OD PSTMX PSTMN
+  8 PL          2017128 2017129   40.  100.   30.   40.   10.
+@N  IRRIGATION  IMDEP ITHRL ITHRU IROFF IMETH IRAMT IREFF
+  8 IR            30.   50.  100. GS000 IR001  10.0 1.000
+@N  NITROGEN    NMDEP NMTHR NAMNT NCODE NAOFF
+  8 NI            30.   50.   25. FE001 GS000
+@N  RESIDUES    RIPCN RTIME RIDEP
+  8 RE           100.     1   20.
+@N  HARVEST     HFRST   HLAST HPCNP HRCNR
+  8 HA              0 2017182  100.    0.
+
+*TREATMENTS
+@N   R O C TNAME....................  CU  FL  SA  IC  MP  MI  MF  MR  MC  MT  ME  MH  SM
+  8  1 0 0 Esplen_EPOCA_1_Mor.         1   4   0   8   8   7   8   0   0   0   0   0   8
+
+*CULTIVARS
+@C  CR INGENO CNAME
+  1 BN IB0096 RODADA_GA       
+
+*FIELDS
+@L  ID_FIELD WSTA....  FLSA  FLOB  FLDT  FLDD  FLDS  FLST SLTX   SLDP ID_SOIL
+  4 MOGO0005 MOGO1701   0.0    0. DR000    0.  100. 00000 VFSA   180. GOST000005
+@L             XCRD            YCRD      ELEV              AREA  SLEN  FLWR  SLAS PRMGT
+  4         0.00000         0.00000      0.00               1.0  100.   1.0   0.0   -99   -99
+
+*INITIAL CONDITIONS
+@C  PCR     ICDAT  ICRT  ICND  ICRN  ICRE  ICWD ICRES ICREN ICREP ICRIP ICRID
+  8 BN    2017108     1     0  1.00  1.00   0.0     0  0.00  0.00  100.   15.
+@C   ICBL  SH2O  SNH4  SNO3
+  8   10. 0.393   0.9   8.4
+  8   20. 0.395   0.9   8.4
+  8   30. 0.371   0.9   8.4
+  8   40. 0.347   0.9   8.4
+  8   50. 0.347   0.9   8.4
+  8   60. 0.347   0.9   8.4
+  8   70. 0.347   0.9   8.4
+  8   80. 0.347   0.9   8.4
+  8   90. 0.347   0.9   8.4
+
+*PLANTING DETAILS
+@P    PDATE   EDATE  PPOP  PPOE  PLME  PLDS  PLRS  PLRD  PLDP  PLWT  PAGE  PENV  PLPH  SPRL
+  8 2017108     -99  30.0  30.0     S     R   50.    0.   2.0  -99.  -99. -99.0 -99.0   0.0
+
+*IRRIGATION
+@I   IEFF  IDEP  ITHR  IEPT  IOFF  IAME  IAMT
+  7 1.000   30.   75.  -99. GS000 IR001   0.0
+@I    IDATE  IROP IRVAL
+  7 2017108 IR004  13.0
+  7 2017113 IR004  13.0
+  7 2017117 IR004  13.0
+  7 2017122 IR004  13.0
+  7 2017127 IR004  13.0
+  7 2017132 IR004  13.0
+  7 2017137 IR004  13.0
+  7 2017142 IR004  13.0
+  7 2017147 IR004  13.0
+  7 2017152 IR004  13.0
+  7 2017157 IR004  13.0
+  7 2017162 IR004  13.0
+  7 2017169 IR004  13.0
+  7 2017173 IR004  13.0
+  7 2017178 IR004  13.0
+  7 2017183 IR004  13.0
+  7 2017190 IR004  13.0
+  7 2017195 IR004  13.0
+
+*FERTILIZERS
+@F    FDATE  FMCD  FACD  FDEP  FAMN  FAMP  FAMK  FAMC  FAMO  FOCD
+  8 2017108 FE005 AP004    3.   20.  -99.  -99.  -99.  -99.   -99
+  8 2017118 FE005 AP003    0.   40.  -99.  -99.  -99.  -99.   -99
+  8 2017132 FE005 AP003    0.   60.  -99.  -99.  -99.  -99.   -99
+
+*RESIDUES
+@R    RDATE  RCOD  RAMT  RESN  RESP  RESK  RINP  RDEP  RMET
+
+*CHEMICALS
+@C    CDATE CHCOD CHAMT  CHME CHDEP   CHT
+
+*TILLAGE
+@T    TDATE TIMPL  TDEP
+
+*ENVIRONMENT
+@E    ODATE  EDAY  ERAD  EMAX  EMIN ERAIN  ECO2  EDEW EWIND
+
+*HARVEST
+@H    HDATE  HSTG  HCOM HSIZE   HPC  HBPC
