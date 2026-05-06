@@ -126,7 +126,7 @@ def _obter_simulacao_escolhida(linha: Mapping[str, Any]) -> str:
 def run_best_configurations_from_summary(
     *,
     arq_config: str | Path = "configs/StartValues_bean.config",
-    arq_resumo: str | Path = "resumo_melhores_configuracoes.csv",
+    arq_resumo: str | Path = "melhores_por_tratamento.csv",
     arq_saida: str | Path = "evaluate_melhores_configuracoes.csv",
 ) -> pd.DataFrame:
     """

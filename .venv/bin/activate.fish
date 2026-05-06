@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/glauber/bayesiana_pipeline_python/bayesiana_pipeline_python/.venv
+set -gx VIRTUAL_ENV /home/glauber/IC_Otimizacao_Bayesiana/OtimizacaoBayesiana_Python_Linux/.venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

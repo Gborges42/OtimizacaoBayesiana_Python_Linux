@@ -9,7 +9,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV /home/glauber/bayesiana_pipeline_python/bayesiana_pipeline_python/.venv
+setenv VIRTUAL_ENV /home/glauber/IC_Otimizacao_Bayesiana/OtimizacaoBayesiana_Python_Linux/.venv
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/"bin":$PATH"

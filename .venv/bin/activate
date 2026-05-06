@@ -39,10 +39,10 @@ deactivate nondestructive
 if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
     # transform D:\path\to\venv to /d/path/to/venv on MSYS
     # and to /cygdrive/d/path/to/venv on Cygwin
-    export VIRTUAL_ENV=$(cygpath /home/glauber/bayesiana_pipeline_python/bayesiana_pipeline_python/.venv)
+    export VIRTUAL_ENV=$(cygpath /home/glauber/IC_Otimizacao_Bayesiana/OtimizacaoBayesiana_Python_Linux/.venv)
 else
     # use the path as-is
-    export VIRTUAL_ENV=/home/glauber/bayesiana_pipeline_python/bayesiana_pipeline_python/.venv
+    export VIRTUAL_ENV=/home/glauber/IC_Otimizacao_Bayesiana/OtimizacaoBayesiana_Python_Linux/.venv
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"
