@@ -43,7 +43,7 @@ def scoring_function(
     input_list: Mapping[str, Any],
     *,
     simulation_function: Callable[[Mapping[str, Any], str, Mapping[str, Any]], pd.DataFrame],
-    evaluate_difference: Callable[[pd.DataFrame, Sequence[str], str], float],
+    evaluate_difference: Callable[[pd.DataFrame, Sequence[str], str, float], float],
     logfile: str = "output/log_execucao.txt",
     noise_std: float = 1e-4,
 ) -> float:
@@ -66,12 +66,13 @@ def scoring_function(
         template_id = iteration_id_random("iteration")
         run = simulation_function(param_sim, template_id, input_list)
         metodo_score = str(input_list.get("metodo_score", "rmse")).lower()
+        mape_iqr_lambda = float(input_list.get("mape_iqr_lambda", 0.5))
         calibration = list(input_list.get("calibration", []))
 
         if run is None or (isinstance(run, pd.DataFrame) and run.empty):
             score = -99.0
         else:
-            score = float(evaluate_difference(run, calibration, metodo_score))
+            score = float(evaluate_difference(run, calibration, metodo_score, mape_iqr_lambda))
 
         msg2 = f"{msg} - Valor do Score para rodada: {score:.4f}\n"
         #append_log(logfile, msg2)

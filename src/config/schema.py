@@ -39,6 +39,7 @@ class CalibConfig:
     iters_k: int
     acq: str
     metodo_score: str
+    mape_iqr_lambda: float
 
     # Paralelo / semente
     paralelo: bool
@@ -70,6 +71,7 @@ class CalibConfig:
 
         acq = str(cfg.get("acq", "ucb")).lower()
         metodo_score = str(cfg.get("metodo_score", "rmse")).lower()
+        mape_iqr_lambda = float(cfg.get("mape_iqr_lambda", 0.5))
 
         paralelo = bool(cfg.get("paralelo", False))
         cores = max(int(cfg.get("cores", 1)), 1)
@@ -102,6 +104,7 @@ class CalibConfig:
             iters_k=iters_k,
             acq=acq,
             metodo_score=metodo_score,
+            mape_iqr_lambda=mape_iqr_lambda,
             paralelo=paralelo,
             cores=cores,
             seed=seed,

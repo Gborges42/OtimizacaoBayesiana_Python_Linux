@@ -8,7 +8,12 @@ import pandas as pd
 from .metrics import rmse, mape, rpe
 
 
-def evaluate_difference(evaluate_data: pd.DataFrame, calibration: Iterable[str], metodo_score: str) -> float:
+def evaluate_difference(
+    evaluate_data: pd.DataFrame,
+    calibration: Iterable[str],
+    metodo_score: str,
+    mape_iqr_lambda: float = 0.5,
+) -> float:
     """
     Para cada variável em calibration:
       - tenta usar pares <VAR>M e <VAR>S
@@ -32,8 +37,6 @@ def evaluate_difference(evaluate_data: pd.DataFrame, calibration: Iterable[str],
 
         obs_candidates = [c for c in cols if str(c).upper() == f"{calu}M"]
         sim_candidates = [c for c in cols if str(c).upper() == f"{calu}S"]
-        with open('filename.txt', 'w') as file_object:
-            file_object.write(str(cols))
         if not obs_candidates or not sim_candidates:
             # fallback: busca qualquer col que contenha 'cal'
             matched = [c for c in cols if cal in str(c) and str(c) not in ("Origem",)]
@@ -46,6 +49,13 @@ def evaluate_difference(evaluate_data: pd.DataFrame, calibration: Iterable[str],
         df2 = evaluate_data[[obs_col, sim_col]].copy().replace(-99, np.nan)
 
         scores.append(metodos[metodo_score](df2, na_rm=True))
+
+    if metodo_score == "mape":
+        mape_values = -np.array(scores, dtype=float)
+        median_mape = np.nanmedian(mape_values)
+        q75, q25 = np.nanpercentile(mape_values, [75, 25])
+        iqr_mape = q75 - q25
+        return float(-(median_mape + float(mape_iqr_lambda) * iqr_mape))
 
     return float(np.nanmean(np.array(scores, dtype=float)))
 

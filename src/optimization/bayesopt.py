@@ -55,7 +55,7 @@ def run_simulation_baye(
     input_list: Mapping[str, Any],
     load_limites: Callable[[Mapping[str, Any]], Dict[str, List[float]]],
     simulation_function: Callable[[Mapping[str, Any], str, Mapping[str, Any]], pd.DataFrame],
-    evaluate_difference: Callable[[pd.DataFrame, Iterable[str], str], float],
+    evaluate_difference: Callable[[pd.DataFrame, Iterable[str], str, float], float],
     salvar_resultados_bo: Callable[[Any, str, List[str]], Any],
     calcular_tempo_dec: Callable[[datetime], str],
     logfile: str = "output/log_execucao.txt",
@@ -116,6 +116,7 @@ def run_simulation_baye(
     rodada_input_list["bnxFile"] = bnx_file
     rodada_input_list["bnxLabel"] = bnx_label
     rodada_input_list["metodo_score"] = str(cfg.get("metodo_score", "rmse")).lower()
+    rodada_input_list["mape_iqr_lambda"] = float(cfg.get("mape_iqr_lambda", 1.5))
 
     # função objetivo
     def _objective(**kwargs: float) -> float:
