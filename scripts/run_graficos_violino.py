@@ -56,6 +56,7 @@ df_long = df_long.dropna(subset=["MAPE"]).copy()
 # =========================
 # 5. Definir ordem
 # =========================
+#ordem_variaveis = ["MDAP", "ADAP", "PD1P", "PDFP", "HWAM", "PWAM", "HWUM", "H#AM", "H#UM", "THAM", "LAIX", "HIAM"]
 ordem_variaveis = ["MDAP", "ADAP", "PD1P", "PDFP"]
 ordem_simulacoes = df["etapa"].drop_duplicates().tolist()
 

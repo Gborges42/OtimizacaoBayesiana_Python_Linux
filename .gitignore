@@ -1,0 +1,8 @@
+# Ambiente Python
+.venv/
+
+# Simulacoes e resultados
+output/
+analysis/
+runs/
+graficos/

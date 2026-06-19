@@ -13,5 +13,8 @@ chmod +x bin/dscsm047
 python -m scripts.run_calibration
 python -m scripts.run_post_training
 python -m scripts.run_select_best_results
-python comparar_simulacoes.py
-python violino_grafico.py
+python -m scripts.run_evaluate_selected_configurations
+python scripts/run_graficos_violino.py
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/github_key
