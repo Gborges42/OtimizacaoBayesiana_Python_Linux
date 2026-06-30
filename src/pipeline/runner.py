@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Any, Dict, List, Mapping, Union
+
+from joblib import Parallel, delayed, parallel_config
 
 from src.config.parser import config_treatment, load_limites
 from src.optimization.bayesopt import run_simulation_baye
@@ -169,6 +172,54 @@ def _build_combinacoes(cfg: Mapping[str, Any]) -> List[Dict[str, Any]]:
 
     return combinacoes
 
+
+def _safe_log_component(value: Any) -> str:
+    """Converte valores da configuração em componentes seguros de caminho."""
+    component = re.sub(r"[^A-Za-z0-9._-]+", "_", str(value).strip())
+    return component.strip("._-") or "sem_valor"
+
+
+def _configuration_logfile(
+    *,
+    output_dir: Path,
+    bnx_label: str,
+    config_index: int,
+    combinacao: Mapping[str, Any],
+) -> Path:
+    filename = (
+        f"{config_index:03d}"
+        f"_ip-{_safe_log_component(combinacao['initPoints'])}"
+        f"_it-{_safe_log_component(combinacao['iters.n'])}"
+        f"_acq-{_safe_log_component(combinacao['acq'])}"
+        f"_kernel-{_safe_log_component(combinacao['kernel'])}.log"
+    )
+    return output_dir / "logs" / _safe_log_component(bnx_label) / filename
+
+
+def _run_calibration_job(
+    *,
+    combinacao: Mapping[str, Any],
+    cfg: Mapping[str, Any],
+    input_list: Mapping[str, Any],
+    logfile: str,
+) -> None:
+    """Executa uma BO completa; função de módulo para ser serializável pelo loky."""
+    run_simulation_baye(
+        combinacao=combinacao,
+        cfg=cfg,
+        input_list=input_list,
+        load_limites=load_limites,
+        simulation_function=simulation_function,
+        evaluate_difference=evaluate_difference,
+        salvar_resultados_bo=salvar_resultados_bo,
+        calcular_tempo_dec=calcular_tempo_dec,
+        logfile=logfile,
+        # O paralelismo ocorre no nível desta função. Desativar o nível
+        # interno evita cores_externos * cores_internos processos concorrentes.
+        objective_parallel=False,
+        objective_cores=1,
+    )
+
         
 def run_grid_calibrations(arq_config: Union[str, Path]) -> None:
     cfg = config_treatment(arq_config)
@@ -176,15 +227,19 @@ def run_grid_calibrations(arq_config: Union[str, Path]) -> None:
 
     base_combinacoes = _build_base_combinacoes(cfg)
     bnx_pairs = _get_bnx_pairs(cfg)
+    paralelo = bool(cfg.get("paralelo", False))
+    cores = max(int(cfg.get("cores", 1)), 1)
+    output_root = Path(str(cfg.get("outputDir", "output")))
 
     for pair in bnx_pairs:
         bnx_file = pair["bnxFile"]
         bnx_test = pair["bnxTest"]
         bnx_label = pair["bnxLabel"]
 
-        output_bnx_dir = Path("output") / bnx_label
+        output_bnx_dir = output_root / bnx_label
+        jobs: List[Dict[str, Any]] = []
 
-        for base_comb in base_combinacoes:
+        for config_index, base_comb in enumerate(base_combinacoes, start=1):
             comb = {
                 **base_comb,
                 "bnxFile": bnx_file,
@@ -192,18 +247,48 @@ def run_grid_calibrations(arq_config: Union[str, Path]) -> None:
                 "bnxLabel": bnx_label,
             }
 
-            run_simulation_baye(
+            logfile = _configuration_logfile(
+                output_dir=output_root,
+                bnx_label=bnx_label,
+                config_index=config_index,
                 combinacao=comb,
-                cfg=cfg,
-                input_list=input_list,
-                load_limites=load_limites,
-                simulation_function=simulation_function,
-                evaluate_difference=evaluate_difference,
-                salvar_resultados_bo=salvar_resultados_bo,
-                calcular_tempo_dec=calcular_tempo_dec,
-                logfile="output/log_execucao.txt",
+            )
+            logfile.parent.mkdir(parents=True, exist_ok=True)
+            # Os resultados da configuração também são sobrescritos em uma
+            # nova execução; truncar o log mantém o mesmo comportamento.
+            logfile.write_text("", encoding="utf-8")
+
+            jobs.append(
+                {
+                    "combinacao": comb,
+                    "cfg": cfg,
+                    "input_list": input_list,
+                    "logfile": str(logfile),
+                }
             )
 
+        if paralelo and cores > 1 and len(jobs) > 1:
+            n_jobs = min(cores, len(jobs))
+            print(
+                f"[PARALELO] BNX={bnx_file}: executando {len(jobs)} "
+                f"otimizações completas com {n_jobs} workers."
+            )
+            with parallel_config(
+                backend="loky",
+                n_jobs=n_jobs,
+                inner_max_num_threads=1,
+            ):
+                Parallel()(
+                    delayed(_run_calibration_job)(**job)
+                    for job in jobs
+                )
+        else:
+            print(f"[SEQUENCIAL] BNX={bnx_file}: executando {len(jobs)} otimizações.")
+            for job in jobs:
+                _run_calibration_job(**job)
+
+        # Barreira por BNX: o pós-treinamento só começa depois que todos os
+        # jobs acima terminarem com sucesso.
         post_input = dict(input_list)
         post_input["bnxFile"] = bnx_file
         post_input["bnxTest"] = bnx_test

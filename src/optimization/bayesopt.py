@@ -59,6 +59,8 @@ def run_simulation_baye(
     salvar_resultados_bo: Callable[[Any, str, List[str]], Any],
     calcular_tempo_dec: Callable[[datetime], str],
     logfile: str = "output/log_execucao.txt",
+    objective_parallel: bool | None = None,
+    objective_cores: int | None = None,
 ) -> BayeOptResult:
     # bounds
     bounds_raw = load_limites(dict(cfg))
@@ -76,8 +78,15 @@ def run_simulation_baye(
     bnx_file = str(combinacao.get("bnxFile", cfg.get("bnxFile", ""))).strip()
     bnx_label = str(combinacao.get("bnxLabel", Path(bnx_file).stem if bnx_file else "SEM_BNX"))
 
-    paralelo = bool(cfg.get("paralelo", False))
-    cores = max(int(cfg.get("cores", 1)), 1)
+    paralelo = (
+        bool(cfg.get("paralelo", False))
+        if objective_parallel is None
+        else bool(objective_parallel)
+    )
+    cores = max(
+        int(cfg.get("cores", 1)) if objective_cores is None else int(objective_cores),
+        1,
+    )
 
     # kernel
     if kernel_type == "gauss":
